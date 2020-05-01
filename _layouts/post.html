@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS first, then Custom CSS, then Your Custom CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <title>Scott Yeager</title>
+  </head>
+
+  <body class="theme-1">
+		<nav class="navbar  shadow-sm text-uppercase">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+      	  <img src="../img/scott-profile.jpeg" width="70" class="d-inline-block align-top align-left img-fluid rounded-circle" alt="">
+      		<span class="text-cta text-wrap align-center" style="padding-left:20px;font-size: 24px">Scott's Blog</span>
+        </a>
+        <!--<a class="navbar-brand text-cta font-weight-bolder" href="tel:+1-503-683-3677"> Call/Text: 503.683.3677</a>-->
+      </div>
+		</nav>
+
+    <main class="bg-white py-5 mb-1">
+      <div class="container">
+        <div class="row">
+    			<div class="col-sm-8">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+    			</div>
+  	     </div>
+       </div>
+    </main>
+
+    <footer class="footer text-center">
+      <nav class="navbar navbar-expand text-uppercase">
+        <div class="container">
+          <div class="navbar-nav navbar-center nav nav-fill">
+            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{% link blog.md %}">Blog</a>
+          </div>
+        </div>
+      </nav>
+      <p class="m-4"><small>Copywrong 2020 Scott Yeager<!-- | <a class="privacy noshadow" href="privacy.html">Privacy Policy</a>--></small></p>
+    </footer>
+  </body>
+</html>

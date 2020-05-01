@@ -12,14 +12,23 @@
   </head>
 
   <body class="theme-1">
+		<nav class="navbar  shadow-sm text-uppercase">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+      	  <!--<img src="img/scott-profile.jpeg" width="30" class="d-inline-block align-top align-left img-fluid rounded-circle" alt="">-->
+      		<span class="text-cta text-wrap">Scott's </span><br>Blog
+        </a>
+      </div>
+		</nav>
 
     <main class="bg-white py-5 mb-1">
       <div class="container">
         <div class="row">
     			<div class="col-sm-8">
-            <h1>{{ page.title }}</h1>
+            <h1>Posts:</h1>
             {{ content }}
     			</div>
+
   	     </div>
        </div>
     </main>
@@ -29,7 +38,7 @@
         <div class="container">
           <div class="navbar-nav navbar-center nav nav-fill">
             <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="{% link blog.md %}">Blog</a>
+            <a class="nav-item nav-link active" href="about.html">Blog</a>
           </div>
         </div>
       </nav>
